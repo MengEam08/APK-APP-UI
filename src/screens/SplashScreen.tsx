@@ -13,11 +13,11 @@ import { Ionicons } from "@expo/vector-icons";
 const { width, height } = Dimensions.get("window");
 
 const splashImages = [
-  require("../../assets/splash_1.png"),
-  require("../../assets/splash_2.jpg"),
-  require("../../assets/splash_3.png"),
-  require("../../assets/splash_4.png"),
-  require("../../assets/splash_5.png"),
+  require("../../assets/splash screen 1(New).png"),
+  require("../../assets/splash screen 2(New).png"),
+  require("../../assets/splash screen3(New).png"),
+  require("../../assets/splash screen 4(New).png"),
+  require("../../assets/splash screen 5(New).png"),
 ];
 
 export default function SplashScreen({ navigation }: any) {
@@ -52,7 +52,7 @@ export default function SplashScreen({ navigation }: any) {
       setCurrentImage(currentImage + 1);
     } else {
       navigation.replace("Main");
-    }
+    } 
   };
 
   // Previous image
@@ -70,7 +70,7 @@ export default function SplashScreen({ navigation }: any) {
       <Image
         source={splashImages[currentImage]}
         style={styles.image}
-        resizeMode="cover"
+        resizeMode="contain"
       />
 
       {/* Skip Button */}
@@ -121,16 +121,24 @@ export default function SplashScreen({ navigation }: any) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#ffffff",
-  },
+container: {
+  flex: 1,
+  backgroundColor: "#fff",
+  justifyContent: "center",
+  alignItems: "center",
+},
 
-  image: {
-    width: width,
-    height: height,
-    position: "absolute",
-  },
+image: {
+  width: width * 1,
+  height: height * 1.2,
+},
+
+// image: {
+//   width: width * 0.8,   
+//   height: height * 0.6, 
+//   alignSelf: "center",
+//   marginTop: 80,
+// },
 
   // Skip Button
   skipBtn: {

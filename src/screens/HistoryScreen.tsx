@@ -13,7 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import PackageCard from "../components/PackageCard";
 
 export default function HistoryScreen({ navigation }: any) {
-  const packages = [
+  const packages = [ 
     {
       id: "1",
       tracking: "BN260508000004",

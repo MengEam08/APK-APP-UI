@@ -20,22 +20,22 @@ export default function LevelPriceScreen() {
             title: "By Land",
             color: "#9A1B1A",
             borderColor: "#9A1B1A",
-            iconImagePrice: require("../../assets/Truck-Tier.png"),
+            iconImagePrice: require("../../assets/ByLand-Red.png"),
             data: [
                 {
                     label: "Weight",
                     value: "$1.5",
-                    icon: require("../../assets/Bage-Tier.png"),
+                    icon: require("../../assets/weight-02.png"),
                 },
                 {
                     label: "Normal (CBM)",
                     value: "$190",
-                    icon: require("../../assets/Box.png"),
+                    icon: require("../../assets/Normal-(CBM)02.png"), 
                 },
                 {
                     label: "Sensitive (CBM)",
                     value: "$210",
-                    icon: require("../../assets/Shield.png"),
+                    icon: require("../../assets/sensitive-(CBM)02.png"),
                 },
             ],
         },
@@ -43,22 +43,22 @@ export default function LevelPriceScreen() {
             title: "By Sea",
             color: "#01408f",
             borderColor: "#01408f",
-            iconImagePrice: require("../../assets/Ship-Tier.png"),
+            iconImagePrice: require("../../assets/By-Sea.png"),
             data: [
                 {
                     label: "Weight",
                     value: "$1.5",
-                    icon: require("../../assets/Box.png"),
+                    icon: require("../../assets/weight-01.png"),
                 },
                 {
                     label: "Normal (CBM)",
                     value: "$190",
-                    icon: require("../../assets/Bage-Tier.png"),
+                    icon: require("../../assets/Normal (CBM)01.png"),
                 },
                 {
                     label: "Sensitive (CBM)",
                     value: "$210",
-                    icon: require("../../assets/Shield.png"),
+                    icon: require("../../assets/sensitive(CBM)01.png"),
                 },
             ],
         },
@@ -66,22 +66,22 @@ export default function LevelPriceScreen() {
             title: "By Air",
             color: "#5a2ade",
             borderColor: "#5a2ade",
-            iconImagePrice: require("../../assets/Airplane-Tier.png"),
+            iconImagePrice: require("../../assets/ByAir-Red.png"),
             data: [
                 {
                     label: "Weight",
                     value: "$8",
-                    icon: require("../../assets/Bage-Tier.png"),
+                    icon: require("../../assets/weight-02.png"),
                 },
                 {
                     label: "Normal (CBM)",
                     value: "$8",
-                    icon: require("../../assets/Box.png"),
+                   icon: require("../../assets/Normal-(CBM)02.png"), 
                 },
                 {
                     label: "Sensitive (CBM)",
                     value: "$8",
-                    icon: require("../../assets/Shield.png"),
+                    icon: require("../../assets/sensitive-(CBM)02.png"),
                 },
             ],
         },
@@ -94,7 +94,7 @@ export default function LevelPriceScreen() {
                     <Ionicons name="chevron-back" size={28} color="#434343" />
                 </TouchableOpacity>
 
-                <Text style={styles.headerTitle}>My Address</Text>
+                <Text style={styles.headerTitle}>Price Level</Text>
 
                 <View style={{ width: 28 }} />
             </View>
@@ -180,7 +180,7 @@ export default function LevelPriceScreen() {
                                             >
                                                 <Image
                                                     source={item.icon}
-                                                    style={{ width: 26, height: 26, resizeMode: "contain" }}
+                                                    style={{ width: 40, height: 40, resizeMode: "contain" }}
                                                 />
                                             </View>
 

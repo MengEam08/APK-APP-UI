@@ -44,12 +44,12 @@ const socials = [
     type: "FontAwesome5",
     color: "#1877F2",
   },
-  {
-    title: "Instagram",
-    icon: "instagram",
-    type: "FontAwesome5",
-    color: "#E4405F",
-  },
+  // {
+  //   title: "Instagram",
+  //   icon: "instagram",
+  //   type: "FontAwesome5",
+  //   color: "#E4405F",
+  // },
   {
     title: "Youtube",
     icon: "youtube",
@@ -113,7 +113,7 @@ export default function ContactScreen({ navigation }: any) {
         </View>
 
         <Image
-          source={require("../../assets/contact_support.png")}
+          source={require("../../assets/customer-service.png")}
           style={styles.heroImage}
         />
       </View>
@@ -145,7 +145,7 @@ export default function ContactScreen({ navigation }: any) {
             <Ionicons
               name="call"
               size={18}
-              color="#7C3AED"
+              color="#01408f"
               style={{ position: "absolute", top: 12, right: 12 }}
             />
           </TouchableOpacity>
@@ -200,10 +200,10 @@ container: {
   },
 
   hero: {
-    margin: 16,
+    // margin: 16,
     padding: 20,
     borderRadius: 20,
-    backgroundColor: "#F5F3FF",
+    backgroundColor: "#F3F7FF",
     flexDirection: "row",
     alignItems: "center",
   },
@@ -211,13 +211,13 @@ container: {
   heroTitle: {
     fontSize: 19,
     fontWeight: "800",
-    color: "#7C3AED",
+    color: "#01408f",
   },
 
   heroSubtitle: {
     marginTop: 8,
     fontWeight: "700",
-    color: "#7C3AED",
+    color: "#01408f",
   },
 
   heroDesc: {
@@ -235,7 +235,7 @@ container: {
     paddingHorizontal: 14,
     paddingVertical: 8,
     borderRadius: 20,
-    backgroundColor: "#7C3AED",
+    backgroundColor: "#9A1B1A",
   },
 
   supportText: {
@@ -321,8 +321,8 @@ container: {
     marginBottom: 20,
   },
   heroImage: {
-    width: 150,
-    height: 150,
+    width: 200,
+    height: 200,
     resizeMode: "contain",
   },
 });

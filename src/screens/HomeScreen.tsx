@@ -216,7 +216,10 @@ export default function HomeScreen() {
                   <TouchableOpacity
                     style={{ flex: 1 }}
                     activeOpacity={0.8}
-                    onPress={() => navigation.navigate("History")}
+                    onPress={() => {
+                      console.log("Pressed Overview item:", item.title);
+                      navigation.navigate("History");
+                    }}
                   >
                     <Card
                       {...item}
@@ -282,14 +285,14 @@ export default function HomeScreen() {
             }}
           >
             <ServiceItem
-              image={require("../../assets/announcement.jpg")}
+              image={require("../../assets/News.png")}
               title="News"
               desc={"Latest\nupdates & offers"}
               onPress={() => navigation.navigate("News")}
             />
 
             <ServiceItem
-              image={require("../../assets/message.jpg")}
+              image={require("../../assets/contact-us.png")}
               title="Contact Us"
               desc={"We are here\nto help you"}
               onPress={() => navigation.navigate("Contact")}
@@ -306,7 +309,7 @@ export default function HomeScreen() {
       </ScrollView>
 
       {/* BOTTOM NAV */}
-      
+
     </SafeAreaView>
   );
 }
@@ -322,7 +325,7 @@ function Section({ title, children, styles }: any) {
   );
 }
 
-/* CARD */
+
 /* CARD */
 function Card({
   image,
@@ -336,8 +339,7 @@ function Card({
   const isTablet = width >= 768;
 
   return (
-    <TouchableOpacity
-      activeOpacity={0.9}
+    <View
       style={styles.card}
     >
       {/* ICON */}
@@ -373,7 +375,7 @@ function Card({
           {label}
         </Text>
       </View>
-    </TouchableOpacity>
+    </View>
   );
 }
 
@@ -391,28 +393,28 @@ function NavIcon({ icon, active = false, size }: any) {
 /* DATA */
 const overviewData = [
   {
-    image: require("../../assets/Packages.png"),
+    image: require("../../assets/Shipment.png"),
     title: "Shipments",
     label: "All",
     value: "0",
   },
 
   {
-    image: require("../../assets/Truck_icon.png"),
+    image: require("../../assets/Shipping.png"),
     title: "Shipping",
     label: "Active",
     value: "0",
   },
 
   {
-    image: require("../../assets/Checked.png"),
+    image: require("../../assets/Delivered.png"),
     title: "Delivered",
     label: "Done",
     value: "0",
   },
 
   {
-    image: require("../../assets/Expense.png"),
+    image: require("../../assets/Expenses.png"),
     title: "Expenses",
     label: "All",
     value: "0",
@@ -436,25 +438,25 @@ const shippingData = [
   },
 ];
 
-const serviceData = [
-  {
-    image: require("../../assets/announcement.jpg"),
-    title: "News",
-    desc: "Latest updates",
-  },
+// const serviceData = [
+//   {
+//     image: require("../../assets/announcement.jpg"),
+//     title: "News",
+//     desc: "Latest updates",
+//   },
 
-  {
-    image: require("../../assets/message.jpg"),
-    title: "Contact",
-    desc: "Customer support",
-  },
+//   {
+//     image: require("../../assets/message.jpg"),
+//     title: "Contact",
+//     desc: "Customer support",
+//   },
 
-  {
-    image: require("../../assets/warehouse.jpg"),
-    title: "Location",
-    desc: "Find branches",
-  },
-];
+//   {
+//     image: require("../../assets/warehouse.jpg"),
+//     title: "Location",
+//     desc: "Find branches",
+//   },
+// ];
 
 /* RESPONSIVE STYLES */
 const createStyles = (width: number, height: number) => {
@@ -650,17 +652,18 @@ const createStyles = (width: number, height: number) => {
       paddingHorizontal: width > 768 ? 10 : 5,
     },
     cardIconBox: {
-      width: width > 768 ? 65 : 45,
-      height: width > 768 ? 65 : 45,
+      width: width > 768 ? 90 : 70,
+      height: width > 768 ? 90 : 70,
 
       borderRadius: 50,
-
       justifyContent: "center",
       alignItems: "center",
     },
     cardImage: {
-      width: Math.min(width * 0.11, 50),
-      height: Math.min(width * 0.11, 50),
+      width: width > 768 ? 70 : 70,
+      height: width > 768 ? 70 : 70,
+  //      width: 60,
+  // height: 60,
     },
     cardContent: {
       marginTop: width > 768 ? 12 : 8,
@@ -730,6 +733,7 @@ const createStyles = (width: number, height: number) => {
       height: width > 768 ? 150 : 100,
 
       marginHorizontal: 4,
+      
 
       borderRadius: 14,
       overflow: "hidden",

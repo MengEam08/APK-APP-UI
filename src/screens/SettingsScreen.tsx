@@ -51,8 +51,8 @@ export default function SettingsScreen({ navigation }: any) {
               onPress={() => navigation.navigate("EditScreen")}
             >
               <Image
-                source={require("../../assets/Person-1.png")}
-                style={{ width: 30, height: 30, marginRight: 10 }}
+                source={require("../../assets/Edit-Profile-1.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
 
               <Text style={styles.smallCardText}>Edit Profile</Text>
@@ -62,8 +62,8 @@ export default function SettingsScreen({ navigation }: any) {
 
             <TouchableOpacity style={styles.smallCardFull}>
               <Image
-                source={require("../../assets/Locked.png")}
-                style={{ width: 25, height: 30, marginRight: 10 }}
+                source={require("../../assets/change-Password-1.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>Change Password</Text>
 
@@ -72,8 +72,8 @@ export default function SettingsScreen({ navigation }: any) {
 
             <View style={styles.smallCardFull}>
              <Image
-            source={require("../../assets/Notify.png")}
-            style={{  width: 25, height: 30, marginRight: 10 }}
+            source={require("../../assets/Notification-1.png")}
+            style={{  width: 40, height: 40, marginRight: 10 }}
           />
 
               <Text style={styles.smallCardText}>Notifications</Text>
@@ -83,8 +83,8 @@ export default function SettingsScreen({ navigation }: any) {
 
             <View style={styles.smallCardFull}>
              <Image
-            source={require("../../assets/App-V.png")}
-            style={{  width: 25, height: 30, marginRight: 10 }}
+            source={require("../../assets/AppVersion-1.png")}
+            style={{  width: 40, height: 40, marginRight: 10 }}
           />
 
               <Text style={styles.smallCardText}>App Version</Text>

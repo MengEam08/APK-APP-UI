@@ -1,37 +1,65 @@
+
 {
   "expo": {
     "name": "my-expo-app",
     "slug": "my-expo-app",
+    "newArchEnabled": true,
     "version": "1.0.0",
 
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/APP-icon.png"
     },
 
     "experiments": {
       "tsconfigPaths": true
     },
 
-    "plugins": [],
-
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-
+    "icon": "./assets/APP-icon.png",
     "userInterfaceStyle": "light",
 
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/APP-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+
     "assetBundlePatterns": ["**/*"],
+
+    "plugins": [
+      "expo-location"
+    ],
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAL0oKHxR7HOxd1gfTDroBO63U3xA_JSgo"
+        }
+      },
+
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/APP-icon.png",
         "backgroundColor": "#ffffff"
+      },
+
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+
+      "package": "com.mengxing.myexpoapp"
+    },
+
+    "extra": {
+      "eas": {
+        "projectId": "aea8f6e5-3130-4cb0-8a3c-58952fa55c64"
       }
     }
   }

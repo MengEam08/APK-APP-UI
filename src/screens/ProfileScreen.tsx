@@ -57,8 +57,8 @@ export default function ProfileScreen({
             <View style={styles.supportMainCard}>
               <View style={styles.smallCardFull}>
                 <Image
-                  source={require("../../assets/Help.png")}
-                  style={{ width: 30, height: 30, marginRight: 10 }}
+                  source={require("../../assets/About-Us.png")}
+                  style={{ width: 40, height: 40, marginRight: 10 }}
                 />
                 <Text style={styles.smallCardText}>About Us</Text>
                 <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -66,8 +66,8 @@ export default function ProfileScreen({
 
               <View style={styles.smallCardFull}>
                 <Image
-                  source={require("../../assets/Privacy.png")}
-                  style={{ width: 30, height: 32, marginRight: 10 }}
+                  source={require("../../assets/Privacy-Policy.png")}
+                  style={{ width: 40, height: 40, marginRight: 10 }}
                 />
                 <Text style={styles.smallCardText}>Privacy Policy</Text>
                 <Ionicons name="chevron-forward" size={18} color="#9494b8" />
@@ -75,8 +75,8 @@ export default function ProfileScreen({
 
               <View style={styles.smallCardFull}>
                 <Image
-                  source={require("../../assets/Terms.png")}
-                  style={{ width: 30, height: 31, marginRight: 10 }}
+                  source={require("../../assets/Term-Service.png")}
+                  style={{ width: 40, height: 40, marginRight: 10 }}
                 />
                 <Text style={styles.smallCardText}>Terms of Service</Text>
                 <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -84,8 +84,8 @@ export default function ProfileScreen({
 
               <View style={styles.smallCardFull}>
                 <Image
-                  source={require("../../assets/Refund.png")}
-                  style={{ width: 30, height: 32, marginRight: 10 }}
+                  source={require("../../assets/Refund-Policy.png")}
+                  style={{ width: 40, height: 40, marginRight: 10 }}
                 />
                 <Text style={styles.smallCardText}>Refund Policy</Text>
                 <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -183,8 +183,8 @@ export default function ProfileScreen({
               </View> */}
               {/* <Ionicons name="business-outline" size={20} color="#2563EB" /> */}
               <Image
-                source={require("../../assets/Building.png")}
-                style={{ width: 30, height: 30, marginRight: 10 }}
+                source={require("../../assets/Branch(Support)-1.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
 
               <View style={{ flex: 1 }}>
@@ -212,8 +212,8 @@ export default function ProfileScreen({
                 
               </View> */}
               <Image
-                source={require("../../assets/Person.png")}
-                style={{ width: 30, height: 30, marginRight: 10 }}
+                source={require("../../assets/Edit-Profile.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
 
               <Text style={styles.smallCardText}>Customer ID</Text>
@@ -232,8 +232,8 @@ export default function ProfileScreen({
             <TouchableOpacity style={styles.smallCardFull}
               onPress={() => navigation.navigate("LevelPrice")}>
               <Image
-                source={require("../../assets/Tier-Level.png")}
-                style={{ width: 30, height: 30, marginRight: 10 }}
+                source={require("../../assets/Price-Leve-1l.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>Price Level</Text>
               <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -243,8 +243,8 @@ export default function ProfileScreen({
             <TouchableOpacity style={styles.smallCardFull}
               onPress={() => navigation.navigate("MyAddressScreen")}>
               <Image
-                source={require("../../assets/Location.png")}
-                style={{ width: 30, height: 30, marginRight: 10 }}
+                source={require("../../assets/Address(Support)-1.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>My Address</Text>
               <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -259,8 +259,8 @@ export default function ProfileScreen({
               }
             >
               <Image
-                source={require("../../assets/Building.png")}
-                style={{ width: 30, height: 30, marginRight: 10 }}
+                source={require("../../assets/Branch(Support)-1.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>Branch</Text>
               <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -276,8 +276,8 @@ export default function ProfileScreen({
               }
             >
               <Image
-                source={require("../../assets/House.png")}
-                style={{ width: 30, height: 30, marginRight: 10 }}
+                source={require("../../assets/warehouse(Support)-1.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>Warehouse</Text>
               <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -289,8 +289,8 @@ export default function ProfileScreen({
               onPress={() => navigation.navigate("History")}
             >
               <Image
-                source={require("../../assets/History.png")}
-                style={{ width: 30, height: 30, marginRight: 10 }}
+                source={require("../../assets/History(Support)psd-1.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>History</Text>
               <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -301,8 +301,8 @@ export default function ProfileScreen({
               onPress={() => navigation.navigate("Contact")}
             >
               <Image
-                source={require("../../assets/support.png")}
-                style={{ width: 30, height: 30, marginRight: 10 }}
+                source={require("../../assets/Help&Support( Support)-1.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>Help & Support</Text>
               <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -317,8 +317,8 @@ export default function ProfileScreen({
           <View style={styles.supportMainCard}>
             <View style={styles.smallCardFull}>
               <Image
-                source={require("../../assets/Help.png")}
-                style={{ width: 30, height: 30, marginRight: 10 }}
+                source={require("../../assets/About-Us.png")}
+                style={{ width: 35, height: 35, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>About Us</Text>
               <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -326,8 +326,8 @@ export default function ProfileScreen({
 
             <View style={styles.smallCardFull}>
               <Image
-                source={require("../../assets/Privacy.png")}
-                style={{ width: 30, height: 32, marginRight: 10 }}
+                source={require("../../assets/Privacy-Policy.png")}
+                style={{ width: 35, height: 35, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>Privacy Policy</Text>
               <Ionicons name="chevron-forward" size={18} color="#9494b8" />
@@ -335,8 +335,8 @@ export default function ProfileScreen({
 
             <View style={styles.smallCardFull}>
               <Image
-                source={require("../../assets/Terms.png")}
-                style={{ width: 30, height: 31, marginRight: 10 }}
+                source={require("../../assets/Term-Service.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>Terms of Service</Text>
               <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -344,8 +344,8 @@ export default function ProfileScreen({
 
             <View style={styles.smallCardFull}>
               <Image
-                source={require("../../assets/Refund.png")}
-                style={{ width: 30, height: 32, marginRight: 10 }}
+                source={require("../../assets/Refund-Policy.png")}
+                style={{ width: 40, height: 40, marginRight: 10 }}
               />
               <Text style={styles.smallCardText}>Refund Policy</Text>
               <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
@@ -498,7 +498,7 @@ const styles = StyleSheet.create({
   logoutBtn: {
     marginHorizontal: 20,
     marginTop: 20,
-    backgroundColor: "#9a1b1a",
+    backgroundColor: "#DC143C",
     paddingVertical: 15,
     borderRadius: 14,
     flexDirection: "row",
